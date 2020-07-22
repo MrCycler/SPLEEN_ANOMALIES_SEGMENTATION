@@ -20,22 +20,22 @@ El proyecto cuentas con las siguientes carpetas:
 
 📁 Visualization ([Ver](/Visualization)) .- Contiene los scripts para para extraer las imágenes de cortes de las ecografías del dataset original [MedicalSegmentationDecathlon](http://medicaldecathlon.com/). Para el proyecto en particular se escogío la partición del dataset que corresponde a ecografías de bazos [SpleenDataset](https://drive.google.com/file/d/1jzeNU1EKnK81PyTsrx0ujfNl-t0Jo8uE/view?usp=sharing).
 
-<p align="center"> 
-    <h1>Imagen correspondiente al dataset original</h1>
+<div align="center"> 
+    <h5>Imagen correspondiente al dataset original</h1>
     <img src='Set%20Generation/resultados/prueba.png' alt="Prueba" height="200px" width="200px">
-</p>
+</div>
 
 📁 Set Generation ([Ver](/Set%20Generation)) .- Contienen los scripts hechos en jupyter notebooks para generar el set de entrenamiento compuesto de imágenes originales e imágenes etiquetadas. Se destacan las funciones para el etiquetado de imágenes que utiliza la librería [OpenCV](https://opencv.org/). El etiquetado automático simula el etiquetado realizado por especialistas en un eventual proyecto similar destinado a producción.
 
-<p align="center"> 
-    <h1>Imagen original</h1>
+<div align="center"> 
+    <h5>Imagen original</h5>
     <img src='Set%20Generation/resultados/spleen_2.ni_z068.png' alt="Original" height="200px" width="200px">
-</p>
+</div>
 
-<p align="center"> 
+<div align="center"> 
     <h5>Imagen etiquetada</h5>
     <img src='Set%20Generation/resultados/label_spleen_2.ni_z068.png' alt="Labelled" height="200px" width="200px">
-</p>
+</div>
 
 📁 Data .- En esta carpeta se recomienda almacenar los siguientes archivos : 
 - Imágenes del set de entrenamiento [Descargar](https://drive.google.com/file/d/12ELJm48gudZApmxozqqeg4JL5HInDauU/view?usp=sharing)
@@ -45,20 +45,20 @@ El proyecto cuentas con las siguientes carpetas:
 
 📁 Training ([Ver](/Training)) .- Contienen los experimentos hechos en jupyter notebooks donde se va construyendo y definiendo nuestro modelo final. El script donde se define nuestro modelo final puede ser accedido en el siguiente [Enlace](/Training/Entrenamiento_Images_v3(FINAL).ipynb). Nuestro modelo final tiene como base un modelo preentrenado ResNet152 que puede ser descargado del siguiente [Enlace](http://data.csail.mit.edu/places/medical/pretrained/2class/resnet152/checkpoint_00000005.pth.tar) y corresponde al proyecto [DDSM-VISUAL-PRIMITIVES](https://github.com/jimmyyhwu/ddsm-visual-primitives). Nuestro proyecto amplia la red neuronal preentrenada de modo que en base a las imágenes originales de ecografías en blanco y negro se generen las imágenes etiquetadas de forma similar a las etiquetadas correspondientes. A continuación se muestra los resultados: 
 
-<p align="center"> 
-    <h1>Imagen dada al modelo</h1>
+<div align="center"> 
+    <h5>Imagen dada al modelo</h5>
     <img src='Results/in2.png' alt="In" height="200px" width="200px">
-</p>
+</div>
 
-<p align="center"> 
-    <h1>Imagen obtenida como resultado tras 1 época</h1>
+<div align="center"> 
+    <h5>Imagen obtenida como resultado tras 1 época</h5>
     <img src='Results/med.png' alt="Med" height="200px" width="200px">
-</p>
+</div>
 
-<p align="center"> 
+<div align="center"> 
     <h5>Imagen obtenida como resultado tras 3 épocas</h5>
     <img src='Results/out2.png' alt="Out" height="200px" width="200px">
-</p>
+</div>
 
 📁 Results ([Ver](/Results)) .- En esta carpeta se almacenan las imágenes que se obtuvieron como resultado de los experimentos y el script de visualización de los resultados finales que se puede ver en el siguiente [Enlace](/Results/Resultados.ipynb). Nuestro modelo final se carga de la nube.
 
@@ -80,7 +80,7 @@ El proyecto cuentas con las siguientes carpetas:
 
 * **Juan Manuel Mendoza Jacinto** - [Linkedin](https://pe.linkedin.com/in/juan-manuel-mendoza-jacinto-18515ab0) - [Github](https://github.com/fararay)
 
-* **Alex Brainer Sanchez Sanchez** - [Linkedin](https://www.linkedin.com/in/alex-sanchez-sanchez/?originalSubdomain=pe) - [Github](https://github.com/alexssanchez)
+* **Alex Blainer Sanchez Sanchez** - [Linkedin](https://www.linkedin.com/in/alex-sanchez-sanchez/?originalSubdomain=pe) - [Github](https://github.com/alexssanchez)
 
 ## Licencia 📄
 
